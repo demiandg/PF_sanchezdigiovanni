@@ -1,14 +1,28 @@
 .footer__menu {
-    display: flex;
     background-color: #9da5a5;
+    display: flex;
+    justify-content: space-around;
+
+    ol 
+    {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 310px;
+        height: 50px;
+    }
+
+    li
+    {
+        height: 15px;     
+    }
 
     a {
         text-align: center;
-        font-size: 15px;
-        color: white;
+        padding: 6px 6px;
+        border-radius: 1px;
+        text-transform: uppercase;
+        color: aliceblue;
     }
-
-    .item_seleccion {
-        background-color: #000090;
-    }
+  
 }

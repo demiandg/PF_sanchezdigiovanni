@@ -34,14 +34,21 @@
             margin: 50px 0;
             line-height: 30px;
 
+            .item_seleccion{
+                background-color: #000090;
+            }
+
             a {
                 color: #fff;
                 font-size: 30px;
                 padding: 7px 13px;
                 border-radius: 3px;
                 text-transform: uppercase;
+                
             }
         }
+        
+       
     }
 }
 
