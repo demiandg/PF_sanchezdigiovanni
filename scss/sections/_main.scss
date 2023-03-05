@@ -1,0 +1,82 @@
+main {
+    background: #c1fafa;
+
+    h2 {
+        text-align: center;
+        text-decoration: solid;
+
+    }
+
+    .div-fondo {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .img-fondo {
+        height: 40vh;
+    }
+
+    .grid-categorias {
+        display: grid;
+        width: auto;
+        grid-template-areas:
+            "gammer"
+            "destock"
+            "monitor"
+            "perif"
+            "tablet"
+            "notebook";
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #f3f7f7;
+
+        .gammer {
+            grid-area: gammer;
+            background-image: url("https://www.gamecored.com/wp-content/uploads/2022/05/03-ROG-Flow-X16-1620x800.jpg");
+            height: 30vw;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .destock {
+            grid-area: destock;
+            background-image: url("https://www.cronista.com/files/image/441/441682/61f5f38f24bee_950_534!.jpg?s=b81a55973c131fe14d9f360db9067c61&d=1643592499");
+            height: 30vw;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .monitor {
+            grid-area: monitor;
+            background-image: url("https://hardzone.es/app/uploads-hardzone.es/2018/09/Monitor-vs-televisi%C3%B3n-01.jpg");
+            height: 30vw;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .perif {
+            grid-area: perif;
+            background-image: url("https://hardzone.es/app/uploads-hardzone.es/2022/03/portada-perifericos-ordenador.jpg");
+            height: 30vw;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tablet {
+            grid-area: tablet;
+            background-image: url("https://images.pagina12.com.ar/styles/focal_content_1200x1050/public/2022-07/565009-tablet-20enacom.jpg?itok=ejZ7lmGY");
+            height: 30vw;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .notebook {
+            grid-area: notebook;
+            background-image: url("https://dlcdnrog.asus.com/rog/media/1613762658454.webp");
+            height: 30vw;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}

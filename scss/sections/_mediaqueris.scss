@@ -1,0 +1,135 @@
+@media (min-width: 768px) {
+    .header__menu {
+        width: 70%;
+    }
+
+    .contacto {
+        height: 400px;
+        top: 80px;
+        left: 300px;
+    }
+
+    .main {
+        .grid-categorias {
+            display: flex;
+        }
+    }
+}
+
+.grid-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 800px;
+
+    div {
+        width: 350px;
+        border: solid 15px black;
+        border-radius: 3px;
+    }
+}
+
+
+
+
+@media (min-width: 1024px) {
+
+
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            margin-top: 4px;
+        }
+
+        .checkbtn {
+            display: none;
+        }
+
+        .header__menu {
+            background: none;
+            position: static;
+            margin-right: 20px;
+            flex-direction: row;
+            align-items: center;
+            width: fit-content;
+            height: 50px;
+
+            li {
+                display: flex;
+                width: 200px;
+                margin: 0;
+                text-align-last: right;
+
+                a {
+                    font-size: 20px;
+                    padding: 7px 13px;
+                    border-radius: 3px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .main {
+
+        .div-fondo {
+            width: 80%;
+            margin-left: 130px;
+        }
+
+
+        .grid-categorias {
+            width: auto;
+
+            div {
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+
+    body .contacto {
+        height: 100vh;
+        top: 100px;
+        left: 550px;
+
+        .formulario {
+            margin-top: 150px;
+        }
+    }
+
+    .nosotros {
+        height: 50vw;
+        background-image: url(../recursos/16407803835167.jpg);
+        background-size: cover;
+        text-align: center;
+
+        .nosotros_div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            float: left;
+            margin-top: 90px;
+
+            p {
+                font-size: 25px;
+                text-align: justify;
+                width: 42%;
+            }
+        }
+
+        .nosotros_logo {
+            border-radius: 50%;
+            width: 300px;
+            justify-content: space-around;
+        }
+    }
+
+
+}
+

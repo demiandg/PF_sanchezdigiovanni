@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none; }
+
+.header {
+  background: #2fcdcd;
+  height: 80px;
+  width: 100%; }
+  .header .logo {
+    height: 80px; }
+  .header .checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: block; }
+  .header .header__menu {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 1s; }
+    .header .header__menu li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px; }
+      .header .header__menu li a {
+        color: #fff;
+        font-size: 30px;
+        padding: 7px 13px;
+        border-radius: 3px;
+        text-transform: uppercase; }
+
+#check {
+  display: none; }
+
+li a:hover,
+li a.active {
+  background: #000090;
+  transition: 1s; }
+
+#check:checked ~ ul {
+  left: 0; }
+
+main {
+  background: #c1fafa; }
+  main h2 {
+    text-align: center;
+    text-decoration: solid; }
+  main .div-fondo {
+    display: flex;
+    flex-direction: column;
+    padding: 5px; }
+  main .img-fondo {
+    height: 40vh; }
+  main .grid-categorias {
+    display: grid;
+    width: auto;
+    grid-template-areas: "gammer" "destock" "monitor" "perif" "tablet" "notebook";
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f3f7f7; }
+    main .grid-categorias .gammer {
+      grid-area: gammer;
+      background-image: url("https://www.gamecored.com/wp-content/uploads/2022/05/03-ROG-Flow-X16-1620x800.jpg");
+      height: 30vw;
+      background-size: cover;
+      background-position: center; }
+    main .grid-categorias .destock {
+      grid-area: destock;
+      background-image: url("https://www.cronista.com/files/image/441/441682/61f5f38f24bee_950_534!.jpg?s=b81a55973c131fe14d9f360db9067c61&d=1643592499");
+      height: 30vw;
+      background-size: cover;
+      background-position: center; }
+    main .grid-categorias .monitor {
+      grid-area: monitor;
+      background-image: url("https://hardzone.es/app/uploads-hardzone.es/2018/09/Monitor-vs-televisi%C3%B3n-01.jpg");
+      height: 30vw;
+      background-size: cover;
+      background-position: center; }
+    main .grid-categorias .perif {
+      grid-area: perif;
+      background-image: url("https://hardzone.es/app/uploads-hardzone.es/2022/03/portada-perifericos-ordenador.jpg");
+      height: 30vw;
+      background-size: cover;
+      background-position: center; }
+    main .grid-categorias .tablet {
+      grid-area: tablet;
+      background-image: url("https://images.pagina12.com.ar/styles/focal_content_1200x1050/public/2022-07/565009-tablet-20enacom.jpg?itok=ejZ7lmGY");
+      height: 30vw;
+      background-size: cover;
+      background-position: center; }
+    main .grid-categorias .notebook {
+      grid-area: notebook;
+      background-image: url("https://dlcdnrog.asus.com/rog/media/1613762658454.webp");
+      height: 30vw;
+      background-size: cover;
+      background-position: center; }
+
+.footer__menu {
+  display: flex;
+  background-color: #9da5a5; }
+  .footer__menu a {
+    text-align: center;
+    font-size: 15px;
+    color: white; }
+  .footer__menu .item_seleccion {
+    background-color: #000090; }
+
+.nosotros {
+  height: 100vh;
+  background-image: url(../recursos/16407803835167.jpg);
+  background-size: cover;
+  text-align: center; }
+  .nosotros .nosotros_div {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+    margin-top: 10px; }
+    .nosotros .nosotros_div p {
+      font-size: 25px;
+      text-align: justify;
+      width: 100%; }
+  .nosotros .nosotros_logo {
+    border-radius: 50%;
+    width: 100px;
+    justify-content: space-around; }
+
+.novedades {
+  background-image: url("../recursos/Img_fondo-Novedades.jpg");
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  /* height: 100vw; */ }
+  .novedades .novedades_contenedor {
+    /* width: 25%; */
+    height: 20%;
+    padding: 50px 38px 50px 38px;
+    border-radius: 10px;
+    color: #131111; }
+    .novedades .novedades_contenedor h4 {
+      text-align: center;
+      font-size: 30px; }
+    .novedades .novedades_contenedor p {
+      font-size: 15px;
+      font-weight: lighter; }
+  .novedades .nov1 {
+    background-color: #c1fafa; }
+  .novedades .nov2 {
+    background-color: lightseagreen; }
+
+.contacto {
+  height: 500vw;
+  background-image: url(../recursos/pc-gamer-arenas-games-www.culturageek.com-4.jpg);
+  background-size: cover;
+  text-align: center; }
+
+.preguntas-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background-image: url(/recursos/fondo_03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  .preguntas-nav li {
+    width: 250px;
+    padding: 3px;
+    border: 3px solid;
+    background-color: #2fcdcd;
+    color: aliceblue;
+    font-size: 40px; }
+  .preguntas-nav li:hover {
+    width: 400px;
+    height: 60px;
+    padding: 3px;
+    border: 3px solid;
+    background-color: #476161;
+    color: #ebeff1;
+    font-size: 50px; }
+
+@media (min-width: 768px) {
+  .header__menu {
+    width: 70%; }
+  .contacto {
+    height: 400px;
+    top: 80px;
+    left: 300px; }
+  .main .grid-categorias {
+    display: flex; } }
+
+.grid-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 800px; }
+  .grid-categorias div {
+    width: 350px;
+    border: solid 15px black;
+    border-radius: 3px; }
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header .logo {
+      margin-top: 4px; }
+    .header .checkbtn {
+      display: none; }
+    .header .header__menu {
+      background: none;
+      position: static;
+      margin-right: 20px;
+      flex-direction: row;
+      align-items: center;
+      width: fit-content;
+      height: 50px; }
+      .header .header__menu li {
+        display: flex;
+        width: 200px;
+        margin: 0;
+        text-align-last: right; }
+        .header .header__menu li a {
+          font-size: 20px;
+          padding: 7px 13px;
+          border-radius: 3px;
+          text-transform: uppercase; }
+  .main .div-fondo {
+    width: 80%;
+    margin-left: 130px; }
+  .main .grid-categorias {
+    width: auto; }
+    .main .grid-categorias div {
+      width: 300px;
+      height: 300px; }
+  body .contacto {
+    height: 100vh;
+    top: 100px;
+    left: 550px; }
+    body .contacto .formulario {
+      margin-top: 150px; }
+  .nosotros {
+    height: 50vw;
+    background-image: url(../recursos/16407803835167.jpg);
+    background-size: cover;
+    text-align: center; }
+    .nosotros .nosotros_div {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      float: left;
+      margin-top: 90px; }
+      .nosotros .nosotros_div p {
+        font-size: 25px;
+        text-align: justify;
+        width: 42%; }
+    .nosotros .nosotros_logo {
+      border-radius: 50%;
+      width: 300px;
+      justify-content: space-around; } }

@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+@import './sections/header';
+@import './sections/main';
+@import './sections/footer';
+@import './sections/nosotros';
+@import './sections/novedades';
+@import './sections/contacto';
+@import './sections/preguntas';
+@import './sections/mediaqueris';
+
